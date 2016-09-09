@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Patient Registration Form</title> <!-- Include CSS file here -->
+<link href="css/form.css" rel="stylesheet">
+<style type="text/css">
+	
+/* Below line is write to use Google font online */
+@import "http://fonts.googleapis.com/css?family=Ubuntu";
+div#main{
+width:830px;
+height:650px;
+margin:0 auto;
+font-family:'Ubuntu',sans-serif
+}
+div#form_sample{
+text-align:center;
+border:1px solid #ccc;
+width:400px;
+padding:0 50px 15px;
+margin-top:20px;
+box-shadow:0 0 15px;
+border-radius:6px;
+float:left
+}
+#main h1{
+margin-top:40px
+}
+hr{
+margin-top:-5px
+}
+label{
+float:left;
+font-size:16px
+}
+input[type="text"]{
+width:100%;
+margin-top:10px;
+height:25px;
+margin-bottom:25px;
+padding:10px;
+border:3px solid #2BC1F2
+}
+textarea{
+width:100%;
+border:3px solid #2BC1F2;
+padding:10px;
+margin-bottom:25px;
+margin-top:10px;
+height:60px;
+resize:none
+}
+input[type="submit"]{
+width:100%;
+padding:10px 45px;
+background-color:#2BC1F2;
+border:none;
+color:#fff;
+font-size:18px;
+font-weight:700;
+cursor:pointer;
+font-family:'Ubuntu',sans-serif
+}
+body{
+	background-color: #000000;
+	color: white;
+}
+/* -------------------------------------
+CSS for Sidebar (optional)
+---------------------------------------- */
+div#fugo{
+float:right}
+</style>
+</head>
+<body>
+<script type="text/javascript"></script>
+<div id="main">
+
+<div id="form_sample">
+	
+
+<script>
+// Fetching HTML Elements in Variables by ID.
+var x = document.getElementById("form_sample");
+var createform = document.createElement('form'); // Create New Element Form
+createform.setAttribute("action", ""); // Setting Action Attribute on Form
+createform.setAttribute("method", "post"); // Setting Method Attribute on Form
+x.appendChild(createform);
+
+var heading = document.createElement('h2'); // Heading of Form
+heading.innerHTML = "Patient Registration ";
+createform.appendChild(heading);
+
+var line = document.createElement('hr'); // Giving Horizontal Row After Heading
+createform.appendChild(line);
+
+var linebreak = document.createElement('br');
+createform.appendChild(linebreak);
+
+var firstnamelabel = document.createElement('label'); // Create Label for FirstName Field
+firstnamelabel.innerHTML = "Your First Name : "; // Set Field Labels
+createform.appendChild(firstnamelabel);
+
+var inputelement = document.createElement('input'); // Create Input Field for FirstName
+inputelement.setAttribute("type", "text");
+inputelement.setAttribute("firstname", "dname");
+createform.appendChild(inputelement);
+
+var linebreak = document.createElement('br');
+createform.appendChild(linebreak);
+
+var lastnamelabel = document.createElement('label'); // Create Label for LastName Field
+lastnamelabel.innerHTML = "Your Last Name : "; // Set Field Labels
+createform.appendChild(lastnamelabel);
+
+var inputelement = document.createElement('input'); // Create Input Field for LastName
+inputelement.setAttribute("type", "text");
+inputelement.setAttribute("lasttname", "dname");
+createform.appendChild(inputelement);
+
+var linebreak = document.createElement('br');
+createform.appendChild(linebreak);
+
+var sexlabel = document.createElement('label'); // Create Label for sex Field
+sexlabel.innerHTML = "Your Sex : "; // Set Field Labels
+createform.appendChild(sexlabel);
+
+var inputelement = document.createElement('input'); // Create Input Field for sex
+inputelement.setAttribute("type", "text");
+inputelement.setAttribute("sex", "dname");
+createform.appendChild(inputelement);
+
+var linebreak = document.createElement('br');
+createform.appendChild(linebreak);
+
+var Addresslabel = document.createElement('label'); // Create Label for sex Field
+Addresslabel.innerHTML = "Your Address : "; // Set Field Labels
+createform.appendChild(Addresslabel);
+
+var inputelement = document.createElement('input'); // Create Input Field for sex
+inputelement.setAttribute("type", "text");
+inputelement.setAttribute("Address", "dname");
+createform.appendChild(inputelement);
+
+/*var linebreak = document.createElement('br');
+createform.appendChild(linebreak);*/
+
+var Phonelabel = document.createElement('label'); // Create Label for phone Field
+Phonelabel.innerHTML = "Your Phone number : "; // Set Field Labels
+createform.appendChild(Phonelabel);
+
+var inputelement = document.createElement('input'); // Create Input Field for phone
+inputelement.setAttribute("type", "text");
+inputelement.setAttribute("Phone", "dname");
+createform.appendChild(inputelement);
+
+
+var emaillabel = document.createElement('label'); // Create Label for E-mail Field
+emaillabel.innerHTML = "Your Email : ";
+createform.appendChild(emaillabel);
+
+var emailelement = document.createElement('input'); // Create Input Field for E-mail
+emailelement.setAttribute("type", "text");
+emailelement.setAttribute("name", "demail");
+createform.appendChild(emailelement);
+
+var bloodgrouplabel = document.createElement('label'); // Create Label for bloodgroup Field
+bloodgrouplabel.innerHTML = "Blood Group : ";
+createform.appendChild(bloodgrouplabel);
+
+var inputelement = document.createElement('input'); // Create Input Field for bloodgroup
+inputelement.setAttribute("type", "text");
+inputelement.setAttribute("bloodgroup", "dname");
+createform.appendChild(inputelement);
+
+var yearlabel = document.createElement('label'); // Create Label for year/month Field
+yearlabel.innerHTML = "Year/Month : ";
+createform.appendChild(yearlabel);
+
+var inputelement = document.createElement('input'); // Create Input Field for year/month
+inputelement.setAttribute("type", "date");
+inputelement.setAttribute("Year", "dname");
+createform.appendChild(inputelement);
+
+var linebreak = document.createElement('br');
+createform.appendChild(linebreak);
+
+var messagelabel = document.createElement('label'); // Append Textarea
+messagelabel.innerHTML = "Your Message : ";
+createform.appendChild(messagelabel);
+
+var texareaelement = document.createElement('textarea');
+texareaelement.setAttribute("name", "dmessage");
+createform.appendChild(texareaelement);
+
+var messagebreak = document.createElement('br');
+createform.appendChild(messagebreak);
+
+var messagebreak = document.createElement('br');
+createform.appendChild(messagebreak);
+
+var submitelement = document.createElement('input'); // Append Submit Button
+submitelement.setAttribute("type", "submit");
+submitelement.setAttribute("name", "dsubmit");
+submitelement.setAttribute("value", "Submit");
+createform.appendChild(submitelement);
+
+</script>
+
+</div> <!-- Include JS file here -->
+<script src="js/form.js"></script>
+</div>
+</body>
+</html>
